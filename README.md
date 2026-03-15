@@ -1,11 +1,45 @@
 # Delhi Air Pollution Prediction (PM2.5)
 
+## Clinical Intelligence Context
+
+Air pollution is strongly associated with respiratory diseases including asthma, COPD, and cardiovascular complications.
+
+This project applies machine learning to model PM2.5 levels using environmental and pollution indicators in Delhi. The objective is to demonstrate how predictive analytics can support environmental health monitoring and population-level risk awareness.
+
+Such predictive systems can assist public health researchers, policymakers, and healthcare analysts in identifying patterns that contribute to respiratory disease risk.
+
 ## Project Overview
 
 Air pollution is one of the most severe public health challenges in India.  
 This project builds a machine learning pipeline to analyze historical air quality data and predict PM2.5 levels in Delhi.
 
 The goal is to demonstrate how data science can support environmental health monitoring and early warning systems.
+
+## Project Architecture
+
+The workflow follows a structured machine learning pipeline:
+
+1. Data Collection  
+   - Delhi air pollution dataset with meteorological and pollutant indicators
+
+2. Data Cleaning & Preprocessing  
+   - Handling missing values  
+   - Data normalization and preparation
+
+3. Feature Engineering  
+   - Selection of environmental and pollutant variables relevant to PM2.5
+
+4. Model Development  
+   - Linear Regression  
+   - Decision Tree Regressor  
+   - Random Forest Regressor
+
+5. Model Evaluation  
+   - Comparison of predicted vs actual PM2.5 levels  
+   - Visualization of model performance
+
+6. Model Interpretation  
+   - Feature importance analysis to identify dominant pollution drivers
 
 ---
 
@@ -133,9 +167,15 @@ Three regression models were evaluated for PM2.5 prediction:
 - Decision Tree Regressor
 - Random Forest Regressor
 
-Among these, the Random Forest model produced the most stable predictions and captured nonlinear relationships between meteorological variables and pollution indicators.
+The Random Forest model performed best.
 
-The comparison between predicted and actual PM2.5 values demonstrates that ensemble learning methods can effectively model complex air-quality dynamics.
+**Evaluation Metrics (Random Forest):**
+
+- RMSE: 17.05
+- MAE: 11.95
+- R² Score: 0.99
+
+These results indicate that the model captures the majority of variance in PM2.5 levels and can effectively model complex relationships between meteorological variables and pollution indicators.
 
 ## Public Health Insight
 
@@ -160,3 +200,14 @@ This visualization compares the predicted PM2.5 levels from the Random Forest mo
 ![Feature Importance](figures/feature_importance.png)
 
 Feature importance analysis highlights which environmental variables contribute most strongly to PM2.5 prediction.
+
+## Future Applications
+
+This project demonstrates how environmental data can be integrated with predictive modeling to support health-focused analytics.
+
+Potential extensions include:
+
+- Integrating hospital admission data for respiratory illnesses
+- Building early-warning systems for high pollution days
+- Developing dashboards for environmental health monitoring
+- Linking pollution patterns with long-term respiratory disease trends
