@@ -125,6 +125,26 @@ src
 README.md
 requirements.txt
 
+## Model Performance
+
+Three regression models were evaluated for PM2.5 prediction:
+
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+
+Among these, the Random Forest model produced the most stable predictions and captured nonlinear relationships between meteorological variables and pollution indicators.
+
+The comparison between predicted and actual PM2.5 values demonstrates that ensemble learning methods can effectively model complex air-quality dynamics.
+
+## Public Health Insight
+
+Air pollution is a major public health concern in large urban environments such as Delhi.
+
+Feature importance analysis indicates that particulate indicators such as PM10 have the strongest influence on PM2.5 levels, while gaseous pollutants like NO₂ and SO₂ contribute secondary signals.
+
+This suggests that particulate emissions remain a dominant driver of urban air-quality deterioration and highlights the importance of monitoring particulate matter to assess respiratory health risks.
+
 ## Visual Insights
 
 ### Random Forest Predictions vs Actual PM2.5
