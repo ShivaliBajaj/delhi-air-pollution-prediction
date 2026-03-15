@@ -124,3 +124,19 @@ src
 
 README.md
 requirements.txt
+
+## Visual Insights
+
+### Random Forest Predictions vs Actual PM2.5
+
+![Prediction Plot](figures/prediction_vs_actual.png)
+
+This visualization compares the predicted PM2.5 levels from the Random Forest model against the actual observed values.
+
+---
+
+### Feature Importance
+
+![Feature Importance](figures/feature_importance.png)
+
+Feature importance analysis highlights which environmental variables contribute most strongly to PM2.5 prediction.
